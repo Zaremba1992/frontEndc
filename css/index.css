@@ -19,6 +19,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 40px 32px;
+  align-items: center;
 }
 
 .logo-header {
@@ -42,10 +43,18 @@ img {
   width: 100%;
 }
 
-ul {
+.menu-list {
   display: flex;
   gap: 40px;
   align-items: center;
+}
+
+.burger {
+  width:24px;
+  height:24px;
+  background:url(../img/burger.png);
+  background-size: cover;
+  display: none;
 }
 
 li {
@@ -81,15 +90,17 @@ font-weight: 700;
 font-size: 45px;
 line-height: 64px;
 margin-bottom: 22px;
+width: 86%;
 }
 
-p {
+.main-paragraf {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
   color: #000000;
   margin-bottom: 32px;
+  width: 72%;
 }
 
 .know-button {
@@ -110,18 +121,148 @@ p {
   width: 667px;
   margin-top: -135px;
   padding-right: 20px;
-  background-color: #EBFCF4;
+  /* background-color: #EBFCF4; */
 }
 
 .main-img-yoga {
 width: 100%;
 }
 
-.footer-text {
-  text-align: center;
+.small-img {
+  margin-top: 20px;
+  margin: 0 auto;
+  width: 120px;
+  margin-right: 500px;
+}
+
+.small-img-img {
+width: 100%;
+
+} 
+
+.sub-text {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
-  font-size: 27px;
-  line-height: 64px;
-  color: #0b4654;
+  font-size: 20px;
+  line-height: 30px;
+  margin-left: -10%;
+  margin-top: 35px;
+}
+  
+.text-small-small {
+  margin-top: 20px;
+  font-family: 'Inter';
+font-weight: 400;
+font-size: 20px;
+line-height: 16px;
+letter-spacing: 0.132615px;
+color: #5C5C5C;
+width: 50%;
+}
+
+
+
+
+  
+@media screen and (max-width: 1024px) {
+  .menu-list {
+    display: none;
   }
+
+  .burger {
+    display: block;
+  }
+  main {
+    flex-direction: column;
+    padding-top: 0;
+  }
+
+  .logo {
+    width: 56px;
+    height: 48px;
+  }
+
+  .brand-name {
+    font-family: 'Athiti';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 38px;
+  }
+
+  .main-text {
+    width: 100%;
+    padding-inline: 24%;
+  }
+
+  h1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    width: auto;
+    text-align: center;
+  }
+
+  .main-paragraf {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    padding-inline: 11%;
+    width: 100%;
+  }
+  
+  .know-button {
+    display: block;
+    margin: 0 auto;
+    width: 203px;
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+  .main-img {
+    width: 100%;
+    margin: 0;
+    margin-top: 15px;
+    margin-inline: auto;
+  }
+  
+  .small-img {
+    width: 10%;
+    margin: 0 auto;
+    padding-top: 20px;
+  
+  }
+
+  .sub-text {
+    width: 100%;
+    padding-inline: 40%;
+  }
+
+  .text-small {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 32px;
+    width: 190%;
+    text-align: center;
+  }
+
+  .text-small-small {
+    margin-top: 20px;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 16px;
+  letter-spacing: 0.132615px;
+  color: #5C5C5C;
+  width: 50%;
+  text-align: center;
+  width: 180%;
+  }
+}
